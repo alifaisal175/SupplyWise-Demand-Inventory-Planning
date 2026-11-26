@@ -1,0 +1,6 @@
+anomaly_id,issue_type,detected,explanation
+ANOM-001,duplicate_inventory_count,True,Duplicate source/count units are present in the fixture
+ANOM-002,unapproved_substitute,True,Substitute approval flag is false; recommendation should be blocked
+ANOM-003,supplier_capacity_exceeded,True,Requested quantity is greater than weekly supplier capacity
+ANOM-004,lead_time_ignored,True,The scenario contains nonzero lead time; check delivery against required date
+ANOM-005,uom_mismatch,True,Demand and supplier units differ and no conversion factor is supplied
