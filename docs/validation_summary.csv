@@ -1,0 +1,17 @@
+check,passed,details
+sku.sku_id unique,True,0 duplicate values
+location.location_id unique,True,0 duplicate values
+supplier.supplier_id unique,True,0 duplicate values
+supplier_capacity.supplier_id unique,True,0 duplicate values
+lead_time.supplier_id unique,True,0 duplicate values
+inventory.inventory_id unique,True,0 duplicate values
+forecast_demand.demand_id unique,True,0 duplicate values
+purchase_order.po_id unique,True,0 duplicate values
+production_plan.production_plan_id unique,True,0 duplicate values
+Inventory SKU foreign keys,True,Inventory SKU references exist
+Inventory location foreign keys,True,Inventory location references exist
+Purchase order supplier foreign keys,True,PO supplier references exist
+Purchase order SKU foreign keys,True,PO SKU references exist
+Demand units non-negative,True,Demand must be >= 0
+Inventory units non-negative,True,Inventory values must be >= 0
+IDs follow SKU pattern,True,SKU IDs are zero-padded
